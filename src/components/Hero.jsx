@@ -1,9 +1,11 @@
+import React, { Component }  from 'react';
 import avatar from '../assets/owner.jpg'
 import github from '../assets/github_icon.png'
 import facebook from '../assets/facebook_icon.png'
 import twitter from '../assets/twitter_icon.png'
 import linkedIn from '../assets/linkedIn_icon.png'
 import medium from '../assets/medium_icon.png'
+import bg from '../assets/bg.png'
 import {
   setAlert,
   useGlobalState,
@@ -37,34 +39,27 @@ const Hero = () => {
         setGlobalState('loading', { show: false, msg: '' })
         console.log(error)
       })
-  }
-
+  };
   return (
-    <div
-      className="bg-[url('https://cdn.pixabay.com/photo/2022/03/01/02/51/galaxy-7040416_960_720.png')]
-        bg-no-repeat bg-cover"
-    >
+    <div className="bg-no-repeat bg-cover" style={{backgroundImage:`url(${bg})`}}>
       <div className="flex flex-col justify-center items-center mx-auto py-10">
         <div className="flex flex-col justify-center items-center">
           <h1 className="text-white text-5xl font-bold text-center">
-            A.I Arts <br />
-            <span className="text-gradient">NFTs</span> Collection
+            <span className="text-gradient">NFTs</span><br/> Collection
           </h1>
-
           <p className="text-white font-semibold text-sm mt-3">
-            Mint and collect the hottest NFTs around.
+            Mint and collect the NFTs around.
           </p>
-
           <button
-            className="shadow-xl shadow-black text-white
-            bg-[#e32970] hover:bg-[#bd255f] p-2
+            className="shadow-xl shadow-black text-black
+            bg-[#ffcc00] hover:bg-[#ffbb00] p-2
             rounded-full cursor-pointer my-4"
             onClick={mint}
           >
             Mint Now
           </button>
 
-          <a
+          {/* <a
             href="https://daltonic.github.io/"
             className="flex flex-row justify-center space-x-2 items-center
             bg-[#000000ad] rounded-full my-4 pr-3 cursor-pointer"
@@ -78,46 +73,43 @@ const Hero = () => {
               <span className="text-white text-sm">0xf55...146a</span>
               <span className="text-[#e32970] text-xs">Daltonic</span>
             </div>
-          </a>
+          </a> */}
 
           <p className="text-white text-sm font-medium text-center">
-            Gospel Darlington kick-started his journey as a software engineer in
-            2016. <br /> Over the years, he has grown full-blown skills in
-            JavaScript stacks such as <br /> React, ReactNative, VueJs, and now
-            blockchain.
+            크리에이터스 프로젝트로 <br/>NFT 발행, 지갑 생성, 전송, 민팅 등 기능을 구현해<br/> 블록체인에 한발 가까워지는 것을 목표로 합니다.
           </p>
 
           <ul className="flex flex-row justify-center space-x-2 items-center my-4">
-            <a
+            {/* <a
               className="bg-white hover:scale-50 transition-all duration-75 delay-75 rounded-full mx-2"
               href="https://github.com/Daltonic"
             >
               <img className="w-7 h-7" src={github} alt="Github" />
-            </a>
-            <a
+            </a> */}
+            {/* <a
               className="bg-white hover:scale-50 transition-all duration-75 delay-75 rounded-full mx-2"
               href="https://www.linkedin.com/in/darlington-gospel-aa626b125"
             >
               <img className="w-7 h-7" src={linkedIn} alt="linkedIn" />
-            </a>
-            <a
+            </a> */}
+            {/* <a
               className="bg-white hover:scale-50 transition-all duration-75 delay-75 rounded-full mx-2"
               href="https://fb.com/darlington.gospel01"
             >
               <img className="w-7 h-7" src={facebook} alt="facebook" />
-            </a>
-            <a
+            </a> */}
+            {/* <a
               className="bg-white hover:scale-50 transition-all duration-75 delay-75 rounded-full mx-2"
               href="https://twitter.com/idaltonic"
             >
               <img className="w-7 h-7" src={twitter} alt="twitter" />
-            </a>
-            <a
+            </a> */}
+            {/* <a
               className="bg-white hover:scale-50 transition-all duration-75 delay-75 rounded-full mx-2"
               href="https://darlingtongospel.medium.com/"
             >
               <img className="w-7 h-7" src={medium} alt="medium" />
-            </a>
+            </a> */}
           </ul>
 
           <div

@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import { useGlobalState } from '../store'
 
 const Loading = () => {

@@ -1,4 +1,5 @@
-import ethlogo from '../assets/ethlogo.png'
+import React, { Component }  from 'react';
+import klaylogo from '../assets/klaylogo.png'
 
 const Footer = () => (
   <div className="w-full flex md:justify-center justify-between items-center flex-col p-4 gradient-bg-footer">
@@ -16,9 +17,9 @@ const Footer = () => (
       </div>
 
       <div className="flex flex-row justify-center items-center mt-2">
-        <img src={ethlogo} alt="logo" className="w-8" />
+        <img src={klaylogo} alt="logo" className="w-8" />
         <span className="text-white text-xs">
-          Adulam © 2016 - 2022 With Love ❤️ Daltonic
+          Kreators © 2022
         </span>
       </div>
     </div>
