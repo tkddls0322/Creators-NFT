@@ -41,7 +41,7 @@ const Hero = () => {
       })
   };
   return (
-    <div className="bg-no-repeat bg-cover" style={{backgroundImage:`url(${bg})`}}>
+    <div className="bg-no-repeat bg-cover bg-center" style={{backgroundImage:`url(${bg})`}}>
       <div className="flex flex-col justify-center items-center mx-auto py-10">
         <div className="flex flex-col justify-center items-center">
           <h1 className="text-white text-5xl font-bold text-center">
